@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"/>
+	    	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+      
+         <!-- Unicons CDN Link for Icons -->
+          <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"> 
+        
+
+        <!-- style.css -->
+		<link rel="stylesheet" href="style.css" />
+        <!-- js -->
+		<script src="script.js" defer></script>
+		<title>Form wizard</title>
+    </head>
+    <body>
+
+		<div class="Registration_form">
+            <form action="#" class="form">
+                <h1 class="text-center">Registration Form</h1>
+                <!-- Progress bar -->
+                <div class="progressbar">
+                    <div class="progress" id="progress"></div>
+
+                    <div class="progress-step progress-step-active" data-title=""></div>
+                    <div class="progress-step" data-title=""></div>
+                    <div class="progress-step" data-title=""></div>
+                    <div class="progress-step" data-title=""></div>
+                    <div class="progress-step" data-title=" "></div>
+                    <div class="progress-step" data-title=""></div>
+                </div>
+
+            <!--  Start Steps -->
+
+                <!-- start tab 1 -->
+                <div class="form-step form-step-active"> 
+                    <div class="input-group">
+                        <label for="cars">Choose article type : </label>
+                        <div class="select">     <!-- select box-->
+                            <select class="selectbox" name="article" id="selectbox">
+                               
+                                <option value="1">   Ful manuscript </option>
+                                <option value="2"> Review paper </option>
+                                <option value="3">  Discution </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btns-group btn-first">
+                        <a href="#" class="btn btn-next first-next">Next</a>
+                    </div>
+                </div>
+                <!-- /end tab 1 -->
+
+
+                <!-- start tab 2 -->
+                <div class="form-step">
+                   
+                    <label for="myfile">Attach a file:</label>
+                       <div class="attach-file">
+                        <input type="file" id="myfile" name="myfile">
+                        <input type="file" id="myfile" name="myfile">
+                        <input type="file" id="myfile" name="myfile">
+                       </div>
+                        <div class="btns-group">
+                          <a href="#" class="btn btn-prev">Previuos</a>
+                          <a href="#" class="btn btn-next">Next</a>
+                        </div>
+                </div>
+                <!-- /end tab 2 -->
+                
+                <!-- start tab 3 -->
+                <div class="form-step">
+                    <div class="input-group">
+                        <label for="dob">General information</label>
+                        <select class="selectbox" name="article" id="selectbox">
+                             <option value="1">   one </option>
+                             <option value="2"> two </option>
+                             <option value="3">  three </option>
+                         </select>
+                    </div>
+                    <div class="content">
+                        <ul> <input type="text"> </ul>
+
+                    </div>
+                    <div class="details">
+                        <p><span>_</span> tags are remaining</p>
+                        <button>Remove All </button>
+
+                    </div>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previuos</a>
+                        <a href="#" class="btn btn-next">Next</a>
+                    </div>
+                    
+                </div>
+                <!-- /end tab 3 -->
+
+                
+                <!-- start tab 4 -->
+                <div class="form-step">
+                    <div class="input-group">
+                        <label for="ID">payment</label>
+                        <input
+                            type="number"
+                            name="payment"
+                            id="payment"
+                        />
+                    </div>
+                    <div class="input-group">
+                        <label for="confirmPassword"> payment</label>
+                        <input
+                            type="password"
+                            name="confirmPassword"
+                            confirmPassword="confirmPassword"
+                        />
+                    </div>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previuos</a>
+                        <a href="#" class="btn btn-next">Next</a>
+                    </div>
+                </div>
+                <!-- /end tab 4 -->
+
+
+                <!-- start tab 5 -->
+                <div class="form-step">
+                    <div class="input-group">
+                        <label for="password">comment</label>
+                        <input
+                            type="password"
+                            name="comment"
+                            id="comment"
+                        />
+                    </div>
+                    <div class="input-group">
+                        <label for="confirmPassword"> comment</label>
+                        <input
+                            type="password"
+                            name="confirmPassword"
+                            confirmPassword="confirmPassword"
+                        />
+                    </div>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previuos</a>
+                        <a href="#" class="btn btn-next">Next</a>
+                    </div>
+                </div>
+                <!-- /end tab 5 -->
+
+                <!-- start tab 6 -->
+                <div class="form-step">
+                    <div class="input-group">
+                        <label for="password">contact</label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                        />
+                    </div>
+                    <div class="input-group">
+                        <label for="confirmPassword"> contact2</label>
+                        <input
+                            type="password"
+                            name="confirmPassword"
+                            confirmPassword="confirmPassword"
+                        />
+                    </div>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previuos</a>
+                        <input type="submit" value="Submit" class="btn" />
+                    </div>
+                </div>
+                <!-- /end tab 6 -->
+
+             <!--  End Steps -->
+
+            </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></script>
+        <script src="script.js"></script>
+	</body>
+</html>
